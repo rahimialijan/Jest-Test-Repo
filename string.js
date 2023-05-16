@@ -1,6 +1,21 @@
+// test one
 function stringLength(string){
-    return string.length;
+    const length=string.length;
+    if (length===0){
+        return 'string must be at least 1 char'
+    }
+    if (length>10){
+        return 'string can not be longer then 10'
+    }
+
+    return length;
 }
-let message='Hello world!';
-const count=stringLength(message);
-console.log(count);
+module.exports= stringLength;
+
+
+//test two
+function reverseString(string){
+    const reversedStr=string.split('').reverse().join('');
+     return reversedStr;
+};
+ module.exports= reverseString;

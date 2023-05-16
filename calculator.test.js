@@ -6,6 +6,8 @@ const calculator = new Calculator();
 //tests for add numbers
 test ('return the sum of two nums', ()=>{
     expect(calculator.add(2,5)).toBe(7)
+    expect(calculator.add(3,5)).toBe(10)
+
 })
 
 //tests for subtract numbers

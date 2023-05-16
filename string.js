@@ -2,13 +2,13 @@
 function stringLength(string){
     const length=string.length;
     if (length===0){
-        return 'string must be at least 1 char'
+        throw new Error('string must be at least 1 char')
     }
     if (length>10){
-        return 'string can not be longer then 10'
-    }
+        throw new Error ('string can not be longer then 10')
+    } 
 
-    return length;
+    return length
 }
 module.exports= stringLength;
 
